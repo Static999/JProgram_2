@@ -10,22 +10,22 @@ public class Main {
         // сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
-        int a = 100;     // Остаток на счету
-        int b = 1190;    // сумма пополнения
-        int c = b/100;   // бонус
+        int check = 100;     // Остаток на счету
+        int replenishment = 1190;    // сумма пополнения
+        int bonus = replenishment / 100;   // бонус
 
-        if (b >= 1000) {
-            int x = a + b + c;
+        if (replenishment >= 1000) {
+            int positive = check + replenishment + bonus;
             System.out.println("Ваша сумма на счету составляет: ");
-            System.out.println(x + " руб.");
+            System.out.println(positive + " руб.");
 
         } else {
-            int y = a + b;
+            int negative = check + replenishment;
             System.out.println("Ваша сумма на счету составляет: ");
-            System.out.println(y + " руб.");
+            System.out.println(negative + " руб.");
 
         }
 
 
-       }
     }
+}
